@@ -76,61 +76,17 @@ public class MyLevel extends Level{
                 addEnemyLine(curr, curr + 1, startingHeight, 30);
             } else if (c == 'b'){
                 int coinHeight = random.nextInt(startingHeight - 1);
-                this.setBlock(curr, coinHeight, COIN);
-                coinHeight = random.nextInt(startingHeight - 1);
-                this.setBlock(curr, coinHeight, COIN);
-                coinHeight = random.nextInt(startingHeight - 1);
-                this.setBlock(curr, coinHeight, COIN);
-                coinHeight = random.nextInt(startingHeight - 1);
-                this.setBlock(curr, coinHeight, COIN);
-                coinHeight = random.nextInt(startingHeight - 1);
-                this.setBlock(curr, coinHeight, COIN);
-                coinHeight = random.nextInt(startingHeight - 1);
-                this.setBlock(curr, coinHeight, COIN);
-                coinHeight = random.nextInt(startingHeight - 1);
-                this.setBlock(curr, coinHeight, COIN);
-                coinHeight = random.nextInt(startingHeight - 1);
-                this.setBlock(curr, coinHeight, COIN);
-                coinHeight = random.nextInt(startingHeight - 1);
-                this.setBlock(curr, coinHeight, COIN);
-                coinHeight = random.nextInt(startingHeight - 1);
-                this.setBlock(curr, coinHeight, COIN);
-                coinHeight = random.nextInt(startingHeight - 1);
-                this.setBlock(curr, coinHeight, COIN);
-                coinHeight = random.nextInt(startingHeight - 1);
-                this.setBlock(curr, coinHeight, COIN);
-                coinHeight = random.nextInt(startingHeight - 1);
-                this.setBlock(curr, coinHeight, COIN);
-                coinHeight = random.nextInt(startingHeight - 1);
-                this.setBlock(curr, coinHeight, COIN);
-                coinHeight = random.nextInt(startingHeight - 1);
+		for (int i = 0; i < 14; i++) {
+			this.setBlock(curr, coinHeight, COIN);
+			coinHeight = random.nextInt(startingHeight - 1);
+		}
                 this.setBlock(curr, coinHeight, COIN);
             } else if (c == 'r') {
                 int enemyHeight = random.nextInt(startingHeight - 1);
-                addEnemyLine(curr, curr + 1, startingHeight, 30);
-                enemyHeight = random.nextInt(startingHeight - 1);
-                addEnemyLine(curr, curr + 1, startingHeight, 30);
-                enemyHeight = random.nextInt(startingHeight - 1);
-                addEnemyLine(curr, curr + 1, startingHeight, 30);
-                enemyHeight = random.nextInt(startingHeight - 1);
-                addEnemyLine(curr, curr + 1, startingHeight, 30);
-                enemyHeight = random.nextInt(startingHeight - 1);
-                addEnemyLine(curr, curr + 1, startingHeight, 30);
-                enemyHeight = random.nextInt(startingHeight - 1);
-                addEnemyLine(curr, curr + 1, startingHeight, 30);
-                enemyHeight = random.nextInt(startingHeight - 1);
-                addEnemyLine(curr, curr + 1, startingHeight, 30);
-                enemyHeight = random.nextInt(startingHeight - 1);
-                addEnemyLine(curr, curr + 1, startingHeight, 30);
-                enemyHeight = random.nextInt(startingHeight - 1);
-                addEnemyLine(curr, curr + 1, startingHeight, 30);
-                enemyHeight = random.nextInt(startingHeight - 1);
-                addEnemyLine(curr, curr + 1, startingHeight, 30);
-                enemyHeight = random.nextInt(startingHeight - 1);
-                addEnemyLine(curr, curr + 1, startingHeight, 30);
-                enemyHeight = random.nextInt(startingHeight - 1);
-                addEnemyLine(curr, curr + 1, startingHeight, 30);
-                enemyHeight = random.nextInt(startingHeight - 1);
+		for (int i = 0; i < 12; i++) {	
+			addEnemyLine(curr, curr + 1, startingHeight, 30);
+			enemyHeight = random.nextInt(startingHeight - 1);
+		}
                 addEnemyLine(curr, curr + 1, startingHeight, 30);
             }
         }
